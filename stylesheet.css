@@ -1,0 +1,84 @@
+body {
+     font-family: sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color:greenyellow;
+     border-style: solid;
+     border-width: 6px;
+     border-color:blueviolet;
+}
+
+#logo {
+     width: 100%;
+     margin-left: 450px;
+
+}
+
+#lbrcelogo {
+     height: 32px;
+}
+
+#college {
+     width: 100%;
+     object-fit: cover;
+     height: 360px;
+}
+
+h1 {
+     text-align: center;
+     margin-top: 24px;
+     margin-bottom: 16px;
+}
+
+#about {
+     padding-left: 32px;
+     padding-right: 32px;
+     display: flex;
+     flex-direction: row;
+     max-width: 800px;
+     margin: 0 auto;
+}
+
+#description {
+     width: 50%;
+     padding: 0;
+}
+
+.underline:hover {
+     text-decoration: underline;
+     margin-top: 0;
+}
+
+.underline:active {
+     color: red;
+}
+
+#video {
+     width: 50px;
+     object-fit: cover;
+     border-radius: 20px;
+}
+
+#footer {
+     background-color: #eee;
+     padding: 16px;
+     margin-top: 32px;
+     text-align: center;
+}
+
+#footer-links {
+     list-style: none;
+}
+
+#footer-links li {
+     display: inline;
+     margin: 16px;
+}
+
+a {
+     text-decoration: none;
+}
+
+#copyright {
+     color: gray;
+}
