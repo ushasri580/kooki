@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Register Form</title>
+          <style>
+               body {
+  font-family: Arial;
+  background-color: black;
+  background-image: url(nature.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 135px;
+  
+}
+
+
+               .head-style{
+                    color:black;
+                    font-weight:bold;
+                    font-size:40px;
+                    margin-bottom: 20px;
+               }
+               .side-matter{
+                    margin-top: 0;
+                    margin-bottom:20px;
+               }
+               .span-style{
+                    color:blue;  
+               }
+               .span-style:hover{
+                    text-decoration: underline;
+          
+               }
+                    .Register-button{
+                    background-color: rgb(74, 164, 74);
+                    color:white;
+                    border:none;
+                    padding-left:200px;
+                    padding-right:200px;
+                    cursor:pointer;
+                    height:50px;  
+               }
+               .Register-button:hover{
+                    background-color: green;
+               }
+              .sign-outcom{
+               color: rgb(76, 76, 229);
+               text-align: center;
+              }
+              .sign-outcom:hover{
+                text-decoration: underline;
+              }
+          </style>
+     </head>
+     <body >
+          <form action="/action_page.php">
+               <div class="container"> 
+          <h1 class="head-style">Register</h1>
+          <p class="side-matter">Please fill in this form to create an account</p>
+          <hr>          
+          <p class="Email-style">
+               <b>Email</b> <br>
+               <input type="text" placeholder="Enter email">
+          </p>
+          <p class="password-style">
+               <b>Password</b><br>
+               <input type=""text" placeholder="Enter Password">
+          </p>
+          <p class="repeat-style">
+               <b>Repeat Password</b><br>
+               <input type="text" placeholder="Repeat Password">
+          </p>
+          <p>
+               By creating an account you agree to our<span class="span-style">Terms & Privacy</span>
+          </p>
+          <button class="Register-button">
+               <center>Register</center></button>
+          <p>
+                    Already have an account &#63<span class="sign-outcom">Signup</span>
+          </p>
+               </div>
+          </form>
+     </body>
+</html>
