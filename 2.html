@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>bts
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          body {
+               background: linear-gradient(to right, #2c5364, #0f2027);
+               height: 100vh;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               overflow: hidden;
+          }
+
+          .slider {
+               position: absolute;
+               width: 200px;
+               height: 200px;
+               transform-style: preserve-3d;
+               animation: rotate 30s linear infinite;
+          }
+
+          @keyframes rotate {
+               0% {
+                    transform: perspective(1000px)rotateY(0deg);
+               }
+
+               100% {
+                    transform: perspective(1000px)rotateY(360deg);
+               }
+          }
+
+          .slider span {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               transform-origin: center;
+               transform-style: preserve-3d;
+               transform: rotateY(calc(var(--i)*45deg))translateZ(350px);
+          }
+
+          .slider span img {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               border-radius: 5px;
+
+          }
+          .slider span:hover img{
+               transform:translateY(-50px) scale(1.2);
+
+          }
+          .slider {
+               background-image: url('BTS.jpg');
+          }
+     </style>
+</head>
+
+<body>
+     <div class="slider">
+          <span style="--i:1;"><img src="rm.jpg" alt=""></span>
+          <span style="--i:2;"><img src="jin.jpg" alt=""></span>
+          <span style="--i:3;"><img src="suga.jpg" alt=""></span>
+          <span style="--i:4;"><img src="j-hope.jpg" alt=""></span>
+          <span style="--i:5;"><img src="v.jpg" alt=""></span>
+          <span style="--i:6;"><img src="jimin.jpg" alt=""></span>
+          <span style="--i:7;"><img src="jk.jpg" alt=""></span>
+          <span style="--i:8;"><img src="b.jpg" alt=""></span>
+          <span style="--i:9;"><img src="t.jpg" alt=""></span>
+          <span style="--i:10;"><img src="s.jpg" alt=""></span>
+     </div>
+</body>
+
+</html>
