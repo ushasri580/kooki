@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Cartoon Gallery</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               color: white;
+          }
+
+          .body {
+               height: 100vh;
+               justify-content: center;
+               display: flex;
+               align-items: center;
+               background-color: #292430;
+          }
+
+          .info {
+               max-width: 1400px;
+               height: 720px;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               align-content: space-around;
+               gap: 20px;
+               overflow: hidden;
+               margin: 150px auto;
+          }
+
+          .item {
+               position: relative;
+               width: 12%;
+               height: inherit;
+               background: rgb(150, 150, 150);
+               cursor: pointer;
+               transition: width .5s ease;
+          }
+
+          .item img {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               transition: all .5s linear;
+               border-radius: 25px;
+          }
+
+          .item:hover img {
+               opacity: 0.6;
+          }
+
+          .item:hover {
+               width: 150%;
+          }
+
+          p {
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               padding: .75em;
+               background-color: rgba(0, 0, 0, 0.6);
+               transform: rotate(-90deg);
+               transform-origin: 0% 0%;
+               text-transform: uppercase;
+               white-space: nowrap;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="info">
+          <div class="item">
+               <img src="1.jpg" alt="">
+               <p class="1">Doremon</p>
+          </div>
+          <div class="item">
+               <img src="sh.jpg" alt="">
+               <p>Shinchin</p>
+          </div>
+          <div class="item">
+               <img src="p.jpg" alt="">
+               <p>Pikachu</p>
+          </div>
+          <div class="item">
+               <img src="d.jpg" alt="">
+               <p>Dora </p>
+          </div>
+          <div class="item">
+               <img src="m.jpg" alt="">
+               <p> Micky</p>
+          </div>
+          <div class="item">
+               <img src="tj.jpg" alt="">
+               <p>Tom And Jerry</p>
+          </div>
+          <div class="item">
+               <img src="cb.jpg" alt="">
+               <p>Chota Bheem</p>
+          </div>
+     </div>
+</body>
+
+</html>
