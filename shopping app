@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charter="UTF-8">
+<meta name="viewport" content="width=device-width,intial-scale=1.0">
+<title>shopping app</title>
+</head>
+<body>
+<nav>
+<label class="logo">NUNA</label>
+<ul>
+  <li><a href="#">HOME</a>
+</body>
+</html>
