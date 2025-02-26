@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>Profile Card</title>
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <meta charset="UTF-8">
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: "poppins", sans-serif;
+          }
+
+          .container {
+               display: flex;
+               gap: 20px;
+               justify-content: center;
+               flex-wrap: wrap;
+
+          }
+          body {
+               height: 100vh;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: grey;
+          }
+
+          .profile {
+               max-width: 370px;
+               width: 100%;
+               background: white;
+               border-radius: 24px;
+               padding: 25px;
+               text-align: center;
+               box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          }
+
+          .image {
+               position: relative;
+               height: 150px;
+               width: 150px;
+               border-radius: 50%;
+               background-color: aquamarine;
+               padding: 3px;
+               margin: 0 auto 10px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+
+          .image .photo {
+               display: block;
+               height: 100%;
+               width: 100%;
+               object-fit: cover;
+               border-radius: 50%;
+               border: 3px solid #fff;
+          }
+
+          .profile .data {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+          }
+
+          .data .name {
+               font-size: 22px;
+               font-weight: 500;
+          }
+
+          .data .job {
+               font-size: 15px;
+               font-weight: 400;
+          }
+
+          .profile .buttons {
+               display: flex;
+               align-items: center;
+               margin-top: 15px;
+               justify-content: center;
+          }
+
+          .buttons .link {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               color: white;
+               font-size: 18px;
+               height: 34px;
+               width: 34px;
+               border-radius: 50%;
+               margin: 0 8px;
+               background-color: #4070f4;
+               text-decoration: none;
+          }
+
+          .profile .button {
+               display: flex;
+               align-items: center;
+               margin-top: 25px;
+               justify-content: center;
+          }
+
+          .button .icons {
+               color: #fff;
+               font-size: 14px;
+               font-weight: 400;
+               border: none;
+               border-radius: 24px;
+               gap: 10px;
+               padding: 8px 24px;
+               background-color: #4070f4;
+               justify-content: center;
+               cursor: pointer;
+               transform: all 0.3s ease;
+          }
+
+          .button .icons:hover {
+               background-color: #0e4bf1;
+          }
+          @media (max-width: 768px) {
+               .container {
+                    flex-direction: column;
+                    align-items: center;
+                    
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <div class="profile">
+               <div class="image">
+                    <img src="D2.jpg" alt="" class="photo">
+               </div>
+               <div class="data">
+                    <span class="name">codingLab</span>
+                    <span class="job">YouTuber&Blogger</span>
+               </div>
+               <div class="buttons">
+                    <a href="#" style="background-color:#4267b2" class="link">
+                         <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" style="background-color:#1da1f2" class="link">
+                         <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="#" style="background-color:#e1306c" class="link">
+                         <i class="bx bxl-youtube"></i>
+                    </a>
+                    <a href="#" style="background-color:#ff0000" class="link">
+                         <i class="bx bxl-twitter"></i>
+                    </a>
+               </div>
+               <div class="button">
+                    <button class="icons">Subscribe</button>
+                    <button class="icons">Message</button>
+               </div>
+          </div>
+          <div class="profile">
+               <div class="image">
+                    <img src="D3.jpg" alt="" class="photo">
+               </div>
+               <div class="data">
+                    <span class="name">Pet Doctor</span>
+                    <span class="job">YouTuber</span>
+               </div>
+               <div class="buttons">
+                    <a href="#" style="background-color:#4267b2" class="link">
+                         <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" style="background-color:#1da1f2" class="link">
+                         <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="#" style="background-color:#e1306c" class="link">
+                         <i class="bx bxl-youtube"></i>
+                    </a>
+                    <a href="#" style="background-color:#ff0000" class="link">
+                         <i class="bx bxl-twitter"></i>
+                    </a>
+               </div>
+               <div class="button">
+                    <button class="icons">Subscribe</button>
+                    <button class="icons">Message</button>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>
